@@ -1,0 +1,5 @@
+def rabbitMQServer = "rabbitmq"
+def rabbitMQPort = "5672"
+def queueName = "my_queue"
+def username = "user"
+def password = "password"

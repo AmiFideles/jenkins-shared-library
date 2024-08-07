@@ -1,0 +1,29 @@
+plugins {
+    // Apply the groovy Plugin to add support for Groovy.
+    id 'groovy'
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['src','vars']
+        }
+        resources {
+            srcDirs = ['resources']
+        }
+    }
+    test {
+        groovy {
+            srcDirs = ['test']
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "https://repo.jenkins-ci.org/releases/"
+    }
+}
+
+
